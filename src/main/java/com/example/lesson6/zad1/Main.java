@@ -9,7 +9,7 @@ public class Main {
         System.out.println(resultSubtract);
         int resultMultiply = Calculator.multiply(95,36);
         System.out.println(resultMultiply);
-        int resultDivision = Calculator.division(290,9);
+        int resultDivision = Calculator.divide(290,9);
         System.out.println(resultDivision);
 
     }

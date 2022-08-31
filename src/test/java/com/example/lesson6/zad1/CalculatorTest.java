@@ -4,36 +4,48 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
-
-
-
-
     @Test
-    void shouldAddTwoValues1and1() {
-        int sum = Calculator.sum(65, 54);
-
+    void shouldAddTwoValues() {
+        // given
+        int number1 = 65;
+        int number2 = 54;
+        // when
+        int sum = Calculator.sum(number1, number2);
+        // then
         Assertions.assertEquals(119, sum);
     }
 
     @Test
-    void shouldSubtractTwoValues1and1() {
-        int subtraction = Calculator.subtract(86, 62);
-
+    void shouldSubtractTwoValues() {
+        // given
+        int number1 = 86;
+        int number2 = 62;
+        // when
+        int subtraction = Calculator.subtract(number1, number2);
+        // then
         Assertions.assertEquals(24, subtraction);
     }
 
     @Test
-    void shouldMultipTwoValues1and1() {
-        int multiplication = Calculator.multiply(95, 36);
-
+    void shouldMultiplyTwoValues() {
+        // given
+        int number1 = 95;
+        int number2 = 36;
+        // when
+        int multiplication = Calculator.multiply(number1, number2);
+        // then
         Assertions.assertEquals(3420, multiplication);
     }
 
     @Test
-    void shouldDivideTwoValues1and1() {
-        int division = Calculator.division(290, 9);
-
-        Assertions.assertEquals(32, division);
+    void shouldDivideTwoValues() {
+        // given
+        int number1 = 290;
+        int number2 = 9;
+        // when
+        int divide = Calculator.divide(number1, number2);
+        // then
+        Assertions.assertEquals(32, divide);
     }
 }
 
